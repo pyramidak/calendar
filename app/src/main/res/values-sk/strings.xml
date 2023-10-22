@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">Stolový kalendár</string>
+    <string name="welcome">..nahráva sa obsah..</string>
+    <string name="text_join">%1$s %2$s</string>
+
+    <!-- menu -->
+    <string name="setting">Nastavenie</string>
+    <string name="backup">Zálohovanie</string>
+
+    <!-- UI -->
+    <string name="edit">Editovať</string>
+    <string name="add">Pridať</string>
+    <string name="remove">Odobrať</string>
+    <string name="back">Späť</string>
+    <string name="delete">Zmazať</string>
+    <string name="keyboard">Klávesnica</string>
+    <string name="nova">Nová</string>
+    <string name="save">Uložiť</string>
+    <string name="total">Celkom:</string>
+    <string name="count">Počet:</string>
+    <string name="year">2021</string>
+    <string name="week">týždeň</string>
+    <string name="month">Júl</string>
+    <string name="day_weekday">Deň</string>
+    <string name="birthday_nameday">Narodeniny / Meniny</string>
+    <string name="note_holiday">Plány / Sviatky</string>
+    <string name="plans">Plány</string>
+    <string name="persons">Narodeniny</string>
+    <string name="day">12</string>
+    <string name="weekday">Pondelok</string>
+    <string name="birthday">Narodenie</string>
+    <string name="dead">Úmrtie</string>
+    <string name="nameday">Julius</string>
+    <string name="note">pripomienka</string>
+    <string name="holiday">Veľkonočný pondelok</string>
+    <string name="name">Názov</string>
+    <string name="name2">Meno</string>
+    <string name="find">Hľadať</string>
+    <string name="connection">Spojenie</string>
+    <string name="connection_completed_no_add">Prepojenie kľúčom je už kompletný. Nemožno pridať ďalšiu osobu do rovnakého spojenia. Vytvorte nové prepojenie vygenerovaním nového kľúča.</string>
+    <string name="connection_exist">Toto spojenie už existuje.</string>
+    <string name="time_event">čas plánu</string>
+    <string name="time_alarm">čas pripomenutie</string>
+
+    <!-- Database options -->
+    <string name="database_title">Nastavenie databázy</string>
+    <string name="Database_description">zálohovanie a synchronizácia</string>
+    <string name="plus">plus</string>
+    <string name="minus">minus</string>
+    <string name="room_zero">Obnoviť synchrónne dáta zo zálohy.</string>
+    <string name="room_title">Google Disk</string>
+    <string name="room_description">Po aktivácii vaše dáta budú zálohované do Google Disku a zároveň synchronizovaná medzi vašimi zariadeniami.</string>
+    <string name="room_plus">vaše dáta sú synchronizované - zálohované</string>
+    <string name="room_plus2">vaše dáta sú synchronizované</string>
+    <string name="firebase_title">Google Firebase</string>
+    <string name="firebase_description">Po aktivácii môžete poslať naplánovanú udalosť alebo narodeniny osoby inej osobe, s ktorou si vymeníte unikátne číslo k prepojeniu.</string>
+    <string name="firebase_plus">vybrané dáta možno odovzdávať osobám v spojení</string>
+    <string name="firebase_plus2">môžete použiť zasielanie narodenín a časových plánov iným používateľom</string>
+
+    <!-- Errors of dates -->
+    <string name="err_dead">úmrtia nemôže byť pred narodením</string>
+    <string name="err_day">chybný deň</string>
+    <string name="err_month">chybný mesiac"</string>
+    <string name="err_year">chybný rok</string>
+    <string name="err_date">"nesprávny dátum</string>
+
+    <!-- Preferences -->
+    <string name="about">O programe</string>
+    <string name="auto_backup">Synchronizovať s cloudom</string>
+    <string name="sync_msg_title">Oznamovať operácie synchronizácie</string>
+    <string name="program">%1$s Stolový kalendár %2$s v.%3$s</string>
+    <string name="copyright">copyright ©%1$s %2$s</string>
+    <string name="email">zdenek@jantac.net</string>
+    <string name="web">www.jantac.net</string>
+    <string name="db_synced">Databáza synchronizované.</string>
+    <string name="backup_failed">Zálohovanie zlyhalo.</string>
+    <string name="backup_sucess">Zálohované do cloudu.</string>
+    <string name="backup_restored">Záloha obnovená.</string>
+    <string name="recovery_failed">Načítanie zálohy zlyhalo.</string>
+    <string name="download_failed">Stiahnutie zálohy zlyhalo.</string>
+    <string name="download_sucess">Záloha z cloudu stiahnutá</string>
+    <string name="backup_missing">Záloha nenájdená.</string>
+    <string name="no_internet">No internet.</string>
+
+    <!-- Adapters -->
+    <string name="next">Ďalší</string>
+    <string name="previous">Predchádzajúca</string>
+    <string name="note_hint">napíšte plán</string>
+    <string name="edit_person">Editácia osôb</string>
+    <string name="edit_plan">Editácia plánu</string>
+    <string name="note_date">23.04.2021</string>
+    <string name="time">00:00</string>
+    <string name="yearly">ročne</string>
+    <string name="monthly">opakovať mesačne</string>
+    <string name="count_person">Osôb</string>
+    <string name="count_plan">Plánov</string>
+    <string name="person_plan">Osoby a plány</string>
+    <string name="date">Dátum</string>
+    <string name="icon">ikona</string>
+    <string name="now">Teraz</string>
+    <string name="today">Dnes</string>
+    <string name="person_hint">meno</string>
+    <string name="day_hint">deň</string>
+    <string name="dot">.</string>
+    <string name="month_hint">mesiac</string>
+    <string name="year_hint">rok</string>
+    <string name="years">rokov</string>
+    <string name="or">alebo</string>
+    <string name="rodne_hint">rodné číslo</string>
+    <string name="age">vek</string>
+
+    <!-- Auth -->
+    <string name="google_drive">Disk Google</string>
+    <string name="signin">Zvoľte si spôsob prihlásenia</string>
+    <string name="sign_description">overenie oprávnenia prístupu k vašim dátam</string>
+    <string name="label_google_sign_in">Google účet</string>
+    <string name="desc_google_sign_in">Prihlásením sa prostredníctvom účtu Google..</string>
+    <string name="label_firebase_ui">Firebase</string>
+    <string name="desc_firebase_ui">Prihlásením sa prostredníctvom emailu.</string>
+    <string name="label_emailpassword">Email</string>
+    <string name="desc_emailpassword">Prihlásením sa prostredníctvom emailu.</string>
+    <string name="hint_user_id">ID užívateľa</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Prihlásiť sa</string>
+    <string name="create_account">Vytvoriť účet</string>
+    <string name="send_link">Poslať link</string>
+    <string name="sign_out">Odhlásiť sa</string>
+    <string name="verify_email">Nový email</string>
+    <string name="disconnect">Odpojiť</string>
+    <string name="loading">Nahrává sa…</string>
+    <string name="signed_in">prihlásený</string>
+    <string name="signed_out">odhlásený</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Heslo</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Prihlásenie sa nepodarilo</string>
+    <string name="auth_disk_failed">Prihlásenie ke Google Disku neúspešné.</string>
+    <string name="status_verification_failed">Overenie zlyhalo</string>
+    <string name="status_verification_succeeded">Overenie úspešné</string>
+    <string name="status_sign_in_failed">Prihlásenie sa nepodarilo</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="google_status_fmt">Užívateľ: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="emailpassword_status_fmt">Email: %1$s (ověřen: %2$s)</string>
+    <string name="emailpassword_title_text">Email a heslo</string>
+    <string name="status_email_not_sent">Pošlite si odkaz do svojho emailu na overenie.</string>
+    <string name="status_email_sent">Odkaz odoslaný. Skontrolujte svoj email.</string>
+    <string name="status_link_found">Odkaz prijatý. Prihláste sa do svojho emailu.</string>
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">Firebase Auth</string>
+    <string name="generic_title_text">OAuth Sign In</string>
+    <string name="generic_signin_fmt">Sign In with %s</string>
+    <string name="generic_status_fmt">User: %s (%s)</string>
+    <string name="generic_label_provider">Provider:</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+    <string name="id_fmt">ID užívateľa: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="reload">Obnov</string>
+    <string name="done">Hotovo</string>
+    <string name="error_sign_in_failed">Prihlásenie sa nepodarilo, logami môžu vedieť viac.</string>
+    <string name="qrcode">QR kód</string>
+    <string name="share">Zdieľať</string>
+
+    <!-- Alert Sign in firebase -->
+    <string name="alert_sign_00">Nie ste</string>
+    <string name="alert_sign_01">prihlásený</string>
+    <string name="alert_sign_02">overený</string>
+    <string name="alert_sign_03">do Firebase</string>
+    <string name="alert_sign_10">Pre preposielanie udalostí je potrebné</string>
+    <string name="alert_sign_11">sa prihlásiť.</string>
+    <string name="alert_sign_12">overiť email.</string>
+    <string name="alert_sign_20">Chcete to urobiť teraz?</string>
+    <string name="yes">Áno</string>
+    <string name="no">Nie</string>
+    <string name="ok">OK</string>
+
+    <!-- Alert Odbery -->
+    <string name="personNameToConnect">Meno osoby k prepojeniu</string>
+    <string name="personNameOfConnection">Od koho je kľúč</string>
+    <string name="receivedKeyToConnect">Obdržaný kľúč</string>
+    <string name="connectionDelete">Zmazanie spojenia</string>
+    <string name="sureToDeleteConnection">Chcete naozaj zmazať spojenie s</string>
+    <string name="keyInClipboard">Kľúč skopírovaný do schránky.</string>
+    <string name="keyDoesNotExist">Kľúč neexistuje.</string>
+
+    <!-- Alert Help -->
+    <string name="help">Pomoc</string>
+    <string name="help_main">Časová tlačidla dole posúvajú čas dopredu a dlhším stlačením do minulosti. \n\n Dotykom na narodeniny alebo plány môžete editovať. Dlhším stlačením môžete udalosť preposlať inej osobe. \n\n Prejdením prstom po obrazovke sa dostanete k ďalším obrazovkám, dvoma naľavo a dvoma napravo. Mapa obrazoviek: Databáza - Hľadanie - Kalendár - Editácia - Prepojenie.</string>
+    <string name="help_edit">Ďalšie osoby alebo plány sa pridávajú automaticky, keď vyplníte posledný prázdnu. \n\n Ak chcete osobu alebo plán zmazať, stačí zmazať jej meno alebo text.</string>
+    <string name="help_link">Dotykom na spojenie odovzdáte kľúč. \n\n Dlhším stlačením na spojenie môžete spojenie zmazať.</string>
+    <string name="help_find">V dátach môžete vyhľadávať textom napísaným vedľa lupy. Kliknutím na lupu prepínate medzi hľadaním kdekoľvek v texte alebo text musí rovnako začínať. Voľbou dole môžete prepínate hľadanie iba v osobách alebo plánoch. \n\n Dotykom na názov stĺpca môžete dáta usporiadať podľa abecedy. Dotykom na šípku sa presuniete na začiatok alebo koniec zoznamu. Dotykom na druhú šípku sa celý zoznam ovplyvnený vyhľadaním presunie do obrazovky odosielanie, kde možno ešte vyberať, čo odošlete.</string>
+
+    <!-- Send and receive data -->
+    <string name="channel_description">Pripomienky Stolového kalendára</string>
+    <string name="received_exchange_no">Zadať obdržaný kľúč</string>
+    <string name="header_exchange">S týmito ľuďmi ste v spojení a môžete si odovzdávať plány alebo narodeniny osôb</string>
+    <string name="generate_exchange_no">vygenerovať kľúč</string>
+    <string name="receive">Prijať</string>
+    <string name="reject">Odmietnuť</string>
+    <string name="header_receive">Nové udalosti možno pridať do kalendára</string>
+    <string name="header_send">Vyberte udalosti na odoslanie</string>
+    <string name="selectOneMessage">Označte aspoň jeden záznam.</string>
+    <string name="selectOneRecipient">Označte aspoň jedného príjemcu.</string>
+    <string name="cancel">Zrušiť</string>
+    <string name="send">Odoslať</string>
+    <string name="choose_persons">Vyberte príjemcu</string>
+    <string name="key">Kľúč</string>
+    <string name="unique_key">Prepojovacie kľúč</string>
+    <string name="own">Môj</string>
+    <string name="connected">Prepojení</string>
+    <string name="sender">Odosielateľ</string>
+    <string name="dataRecieved">Nové udalosti od</string>
+    <string name="event_note">pripomienka</string>
+    <string name="event_birthday">narodeniny</string>
+    <string name="event_message">správa</string>
+
+    <!-- Trial version
+    Bez obmedzenia môžete používať aplikáciu celý mesiac. Ak vám vyhovuje, prosím zakúpte si plnú verziu.
+    Skúšobná doba skončila. Chcete otvoriť webovú stránku aplikácie, kde môžete získať plnú verziu?
+    -->
+    <string name="trial_title">Skúšobná verzia</string>
+    <string name="trial_text">Délka testovacej doby aplikácia není stanovená. Poté bude aplikácia stát 6 EUR.</string>
+    <string name="trial_ask">Prosím prihláste sa k svojmu Google účtu, ktorý postráži skúšobnú dobu. Bez toho nemôžete používať skúšobnú verziu.</string>
+    <string name="trial_end">Zkušební období skončilo. Chcete otvoriť neomezenú verziu tejto aplikácie v obchode Play?</string>
+
+    <!-- New version -->
+    <string name="new_title">Nová verze</string>
+    <string name="new_text">Chcete otvoriť inštaláciu novej verzie %1$s?</string>
+    <string name="open">Otvoriť</string>
+    <string name="close">Zavrieť</string>
+
+</resources>

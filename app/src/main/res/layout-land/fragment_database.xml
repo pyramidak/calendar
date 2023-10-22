@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        tools:context=".DatabaseFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layoutRoom"
+            android:layout_weight="0.82"
+            android:layout_height="0dp">
+
+        <TextView
+                android:text="@string/Database_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:text="@string/database_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_plus"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@string/plus"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ivPlusRoom"/>
+
+        <TextView
+                android:text="@string/room_zero"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/ivPlusRoom"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@+id/ivPlusRoom"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvRoom"
+                />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layoutDisk"
+            android:layout_weight="1.08">
+
+        <TextView
+                android:text="@string/room_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitleRoom"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+                android:text="@string/room_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescriptionRoom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleRoom"
+                android:layout_marginTop="10dp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_plus_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                android:id="@+id/ivPlusDisk"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionRoom"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/plus"/>
+
+        <TextView
+                android:text="@string/room_plus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPlusRoom"
+                app:layout_constraintStart_toEndOf="@+id/ivPlusDisk"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@+id/ivPlusDisk"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layoutFirebase"
+            android:layout_weight="1.08">
+
+        <TextView
+                android:text="@string/firebase_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitleFirebase"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+                android:text="@string/firebase_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescriptionFirebase"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleFirebase"
+                android:layout_marginTop="10dp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_plus_gray"
+                android:id="@+id/ivPlusFirebase"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@string/minus"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionFirebase"
+                android:layout_marginTop="10dp"
+                />
+
+        <TextView
+                android:text="@string/firebase_plus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPlusFirebase"
+                app:layout_constraintStart_toEndOf="@+id/ivPlusFirebase"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@+id/ivPlusFirebase"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="20dp"
+                />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

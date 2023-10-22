@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReceiveActivity">
+
+    <Button
+            android:text="@string/reject"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnReject"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    <Button
+            android:text="@string/receive"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnReceive"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/grey_400"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+            android:id="@+id/clHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+                android:id="@+id/tvSource"
+                android:text="@string/sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/tvName"
+                android:text="@string/person_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toEndOf="@+id/cbAll"
+                android:layout_marginStart="30dp"/>
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbAll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader"
+            android:id="@+id/rvMessage"
+            app:layout_constraintBottom_toTopOf="@+id/btnReject"/>
+
+    <TextView
+            android:text="@string/header_receive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHeader"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

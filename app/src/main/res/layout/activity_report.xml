@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReportActivity">
+
+    <TextView
+            android:text="totalOdbery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotalOdbery"
+            app:layout_constraintTop_toBottomOf="@+id/tvConnectedOdbery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.512"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:text="lastWriteTwoMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLastWriteTwoMonth"
+            app:layout_constraintTop_toBottomOf="@+id/tvLastWriteOneMonth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.527"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:text="lastWriteOneMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLastWriteOneMonth"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalOdbery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.501"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:text="connectedOdbery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvConnectedOdbery"
+            app:layout_constraintTop_toBottomOf="@+id/tvlastAccessTooLong"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.511"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:text="lastAccessTooLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvlastAccessTooLong"
+            app:layout_constraintTop_toBottomOf="@+id/tvlastAccessTwoMonth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.518"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:text="lastAccessTwoMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvlastAccessTwoMonth"
+            app:layout_constraintTop_toBottomOf="@+id/tvLastAccessOneMonth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.516"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:text="lastAccessOneMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLastAccessOneMonth"
+            app:layout_constraintTop_toBottomOf="@+id/tvOneDayTry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.508"
+            android:layout_marginTop="30dp"/>
+
+    <TextView
+            android:text="full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFull"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvUsers"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:text="oneDayTry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOneDayTry"
+            app:layout_constraintTop_toBottomOf="@+id/tvNewUsers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            />
+
+    <TextView
+            android:text="newUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNewUsers"
+            app:layout_constraintTop_toBottomOf="@+id/tvDailyActive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+            android:text="dailyActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDailyActive"
+            app:layout_constraintTop_toBottomOf="@+id/tvFull"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.511"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:text="Firebase Report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvReport"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="34sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:text="Users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUsers"
+            app:layout_constraintTop_toBottomOf="@+id/tvReport"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"/>
+
+    <Button
+            android:text="@string/close"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnClose2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

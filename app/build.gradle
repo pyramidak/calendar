@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services' //Firebase!
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt' //Room!
+apply plugin: 'com.bugsnag.android.gradle' //BugSnag
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\zdene\\AndroidStudioProjects\\Kalendar\\pyramidak_debug.jks')
+            storePassword ''
+            keyAlias 'kalendar1'
+            keyPassword ''
+        }
+        release {
+            storeFile file('C:\\Users\\zdene\\AndroidStudioProjects\\Kalendar\\pyramidak_release.jks')
+            storePassword ''
+            keyAlias 'kalendar2'
+            keyPassword ''
+        }
+    }
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "cz.pyramidak.kalendar"
+        minSdkVersion 26
+        targetSdk 33
+        versionCode 58
+        versionName "2.3.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+   //noinspection GroovyAssignabilityCheck
+    buildFeatures {
+        viewBinding true
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0']
+        }
+    }
+
+    //Google Drive
+    namespace 'cz.pyramidak.kalendar'
+    allprojects {
+        repositories {
+            mavenCentral() //do not remove
+            maven {
+                url "https://maven.google.com"
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    // UI
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation "com.google.android.material:material:1.9.0"
+    implementation "androidx.activity:activity-ktx:1.7.2"
+    implementation 'androidx.fragment:fragment-ktx:1.6.1'
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0' //2.7.+ for API 34
+    implementation 'androidx.navigation:navigation-ui-ktx:2.6.0' //2.7.+ for API 34
+    //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Kotlin components
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.core:core-ktx:1.10.1"
+    //api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
+    //api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+
+    // Lifecycle components
+    //implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
+    //implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+
+    // Room components
+    implementation "androidx.room:room-ktx:2.5.2"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    kapt "androidx.room:room-compiler:2.5.2"
+    androidTestImplementation "androidx.room:room-testing:2.5.2"
+
+    //Google Drive
+    implementation 'com.google.android.gms:play-services-drive:17.0.0'
+    implementation "com.google.android.gms:play-services-auth:20.6.0" //19.2.0 nechat starou verzi kvůli funkčnosti
+    implementation 'com.google.http-client:google-http-client-gson:1.39.2'
+    implementation('com.google.api-client:google-api-client-android:1.32.1') {exclude group: 'org.apache.httpcomponents'}
+    implementation('com.google.apis:google-api-services-drive:v3-rev20210707-1.32.1') {exclude group: 'org.apache.httpcomponents'}
+
+    //Dropbox
+    //implementation 'com.dropbox.core:dropbox-core-sdk:5.4.5'
+
+    // Firebase - BoM
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+    implementation 'com.google.firebase:firebase-database-ktx'
+    // Firebase - UI like recycleViewAdapter
+    implementation 'com.firebaseui:firebase-ui-database:7.2.0'
+    // Google Analytics: When using the BoM, don't specify versions in Firebase dependencies
+    // implementation 'com.google.firebase:firebase-analytics-ktx'
+    // Temporarily pinned to 20.0.1 to avoid https://youtrack.jetbrains.com/issue/KT-44375
+    implementation ('com.google.firebase:firebase-auth-ktx:22.1.1') {
+        exclude module: "play-services-safetynet"
+    }
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
+
+    // QR code and scanner
+    //implementation 'com.budiyev.android:code-scanner:2.1.0'
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.1.0'
+    //implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+    implementation 'com.github.androidmads:QRGenerator:1.0.1'
+
+    // Testing
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.arch.core:core-testing:2.2.0"
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.4.0", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    //BugSnag
+    implementation "com.bugsnag:bugsnag-android:5.+" //BugSnag, do not change 5.+ here, 7.+ only in project gradle
+}

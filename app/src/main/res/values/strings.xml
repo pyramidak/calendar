@@ -1,0 +1,231 @@
+<resources>
+    <string name="app_name">Desk Calendar</string>
+    <string name="welcome">..uploading content..</string>
+    <string name="text_join">%1$s %2$s</string>
+
+    <!-- menu -->
+    <string name="setting">Settings</string>
+    <string name="backup">Backup</string>
+
+    <!-- UI -->
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="nova">New</string>
+    <string name="save">Save</string>
+    <string name="total">Total:</string>
+    <string name="count">Count:</string>
+    <string name="year">2021</string>
+    <string name="week">week</string>
+    <string name="month">July</string>
+    <string name="day_weekday">Day</string>
+    <string name="birthday_nameday">Birthdays / Names</string>
+    <string name="note_holiday">Plans / Holidays</string>
+    <string name="plans">Plans</string>
+    <string name="persons">Birthdays</string>
+    <string name="day">12</string>
+    <string name="weekday">Monday</string>
+    <string name="birthday">Birth</string>
+    <string name="dead">Death</string>
+    <string name="nameday">Julius</string>
+    <string name="note">dental hygiene</string>
+    <string name="holiday">Easter Monday</string>
+    <string name="name">Title</string>
+    <string name="name2">Name</string>
+    <string name="find">Find</string>
+    <string name="connection">Spojení</string>
+    <string name="connection_completed_no_add">The key connection is already complete. You cannot add another person to the same connection. Create a new connetion by generating a new key.</string>
+    <string name="connection_exist">This connection already exists.</string>
+    <string name="time_event">plan time</string>
+    <string name="time_alarm">reminder time</string>
+
+    <!-- Database options -->
+    <string name="database_title">Database settings</string>
+    <string name="Database_description">backup and synchronization</string>
+    <string name="plus">plus</string>
+    <string name="minus">minus</string>
+    <string name="room_zero">Restore synchronously data from backup.</string>
+    <string name="room_title">Google Disk</string>
+    <string name="room_description">Once activated, your data will be backed up to Google Drive and synced between your devices.</string>
+    <string name="room_plus">your data is synchronized - backed up</string>
+    <string name="room_plus2">your data is synchronized</string>
+    <string name="firebase_title">Google Firebase</string>
+    <string name="firebase_description">After activation, you can send your events or birthday of persons to another person, with whom you will exchange a unique connecting number.</string>
+    <string name="firebase_plus">selected data can be passed to connected persons</string>
+    <string name="firebase_plus2">you can use sending birthdays and events to other users</string>
+
+    <!-- Errors of dates -->
+    <string name="err_dead">death cannot be before birth</string>
+    <string name="err_day">wrong day</string>
+    <string name="err_month">wrong month</string>
+    <string name="err_year">wrong year</string>
+    <string name="err_date">wrong date</string>
+
+    <!-- Preferences and sync -->
+    <string name="about">About application</string>
+    <string name="auto_backup">Sync with cloud</string>
+    <string name="sync_msg_title">Report synchronization operations</string>
+    <string name="program">%1$s Desk Calendar %2$s v.%3$s</string>
+    <string name="copyright">copyright ©%1$s %2$s</string>
+    <string name="email">zdenek@jantac.net</string>
+    <string name="web">www.jantac.net</string>
+    <string name="db_synced">Database synchronized.</string>
+    <string name="backup_failed">Backup failed.</string>
+    <string name="backup_sucess">Backed up to the cloud.</string>
+    <string name="backup_restored">Backup restored.</string>
+    <string name="recovery_failed">Recovery failed.</string>
+    <string name="download_failed">Backup download failed.</string>
+    <string name="download_sucess">Cloud backup downloaded.</string>
+    <string name="backup_missing">Backup not found.</string>
+    <string name="no_internet">No internet.</string>
+
+    <!-- Adapters -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="note_hint">write a plan</string>
+    <string name="edit_person">Edit persons</string>
+    <string name="edit_plan">Edit plans</string>
+    <string name="note_date">23.04.2021</string>
+    <string name="time">00:00</string>
+    <string name="yearly">yearly</string>
+    <string name="monthly">repeat monthly</string>
+    <string name="count_person">Persons</string>
+    <string name="count_plan">Plans</string>
+    <string name="person_plan">Persons and plans</string>
+    <string name="date">Date</string>
+    <string name="icon">icon</string>
+    <string name="now">Now</string>
+    <string name="today">Today</string>
+    <string name="person_hint">name</string>
+    <string name="day_hint">day</string>
+    <string name="dot">.</string>
+    <string name="month_hint">month</string>
+    <string name="year_hint">year</string>
+    <string name="years">years</string>
+    <string name="or">or</string>
+    <string name="rodne_hint">personal no.</string>
+    <string name="age">age</string>
+
+    <!-- Auth -->
+    <string name="google_drive">Disk Google</string>
+    <string name="signin">Choose your login method</string>
+    <string name="sign_description">verify access rights to your data</string>
+    <string name="label_google_sign_in">Google account</string>
+    <string name="desc_google_sign_in">Signing in with your Google Account.</string>
+    <string name="label_firebase_ui">Firebase</string>
+    <string name="desc_firebase_ui">Logging in via email.</string>
+    <string name="label_emailpassword">Email</string>
+    <string name="desc_emailpassword">Logging in via email.</string>
+    <string name="hint_user_id">ID User</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Log in</string>
+    <string name="create_account">Create account</string>
+    <string name="send_link">Send link</string>
+    <string name="sign_out">Sign out</string>
+    <string name="verify_email">New email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="signed_in">signed in</string>
+    <string name="signed_out">signed out</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Login failed</string>
+    <string name="auth_disk_failed">Google Drive login failed.</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification successful</string>
+    <string name="status_sign_in_failed">Login failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="google_status_fmt">User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="emailpassword_status_fmt">Email: %1$s (verified: %2$s)</string>
+    <string name="emailpassword_title_text">Email and password</string>
+    <string name="status_email_not_sent">Send a link to your email for verification.</string>
+    <string name="status_email_sent">Link sent. Check your email.</string>
+    <string name="status_link_found">Link received. Log in to your email.</string>
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">Firebase Auth</string>
+    <string name="generic_title_text">OAuth Sign In</string>
+    <string name="generic_signin_fmt">Sign In with %s</string>
+    <string name="generic_status_fmt">User: %s (%s)</string>
+    <string name="generic_label_provider">Provider:</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+    <string name="id_fmt">ID User: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="reload">Reload</string>
+    <string name="done">Done</string>
+    <string name="error_sign_in_failed">Login failed, logs may know more.</string>
+    <string name="qrcode">QR code</string>
+    <string name="share">Share</string>
+
+    <!-- Alert Sign in firebase -->
+    <string name="alert_sign_00">You are not</string>
+    <string name="alert_sign_01">logged</string>
+    <string name="alert_sign_02">verified</string>
+    <string name="alert_sign_03">in Firebase</string>
+    <string name="alert_sign_10">You need for events forwarding</string>
+    <string name="alert_sign_11">to be signed in.</string>
+    <string name="alert_sign_12">to verify email.</string>
+    <string name="alert_sign_20">Do you want to do it now?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+
+    <!-- Alert Help -->
+    <string name="help">Help</string>
+    <string name="help_main">The time buttons below move the time forward and press and hold to the past. \n\n Touch the day number to change the default day for determining the time offset. \n\n Touch birthdays or schedules to edit. Press and hold to forward the event to another person. \n\n Swipe the screen to go to other screens, two on the left and two on the right. Screen map: Database - Search - Calendar - Edit - Link.</string>
+    <string name="help_edit">Additional people or plans are added automatically when you fill in the last blank. \n\n If you want to delete a person or a plan, just delete their name or text.</string>
+    <string name="help_link">Touch a connection to forward the key. \n\n Long press on a connection to delete the connection.</string>
+    <string name="help_find">You can search the data for text written next to the magnifying glass. Click the magnifying glass to toggle between searching anywhere in the text, or the text must start from beginning. Select below to toggle search only in people or plans. \n\n Touch the column name to sort the data alphabetically. Touch the arrow to move to the beginning or end of the list. Touching the second arrow moves the entire list affected by the search to the next screen, where you can still select what to send.</string>
+
+    <!-- Alert Odbery -->
+    <string name="personNameToConnect">Name of the person to link to</string>
+    <string name="personNameOfConnection">Who is the key from?</string>
+    <string name="receivedKeyToConnect">Enter received key</string>
+    <string name="connectionDelete">Deleting a connection</string>
+    <string name="sureToDeleteConnection">Do you really want to delete the connection with</string>
+    <string name="keyInClipboard">Key copied to clipboard.</string>
+    <string name="keyDoesNotExist">Key does not exist.</string>
+
+    <!-- Send and receive data -->
+    <string name="channel_description">Desk Calendar Reminders</string>
+    <string name="received_exchange_no">A received key</string>
+    <string name="header_exchange">You are connected to these people and you can send your events or any birthdays</string>
+    <string name="generate_exchange_no">Generate a key</string>
+    <string name="receive">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="header_receive">New events can be added to the calendar</string>
+    <string name="header_send">Select events to send</string>
+    <string name="selectOneMessage">Select at least one record.</string>
+    <string name="selectOneRecipient">Select at least one recipient.</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="choose_persons">Select a recipient</string>
+    <string name="key">Key</string>
+    <string name="unique_key">Connecting key</string>
+    <string name="own">Mine</string>
+    <string name="connected">Connected</string>
+    <string name="sender">Sender</string>
+    <string name="dataRecieved">new events from</string>
+    <string name="event_note">event</string>
+    <string name="event_birthday">birthday</string>
+    <string name="event_message">message</string>
+
+    <!-- Trial version -->
+    <string name="trial_title">Trial version</string>
+    <string name="trial_text">The length of the trial period has not been determined. After that, the application will cost 7 USD.</string>
+    <string name="trial_ask">Please log in to your Google Account, which is monitoring the trial period. You can not use the trial version without it.</string>
+    <string name="trial_end">The trial period is over. Do you want to open unlimited version of this application in Play Store?</string>
+
+    <!-- New version -->
+    <string name="new_title">New version</string>
+    <string name="new_text">Do you want to open a link to install new version %1$s?</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+</resources>

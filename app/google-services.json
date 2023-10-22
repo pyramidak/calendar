@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "1083728603371",
+    "firebase_url": "https://stolni-kalendar-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "stolni-kalendar",
+    "storage_bucket": "stolni-kalendar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083728603371:android:001a37f043d14d12c2f6ae",
+        "android_client_info": {
+          "package_name": "cz.pyramidak.kalendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083728603371-m9j48kungaomc77hqs7o9vqhebe1g1sj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cz.pyramidak.kalendar",
+            "certificate_hash": "03825ca5599564a41c9cce2017c9acdabcf1067a"
+          }
+        },
+        {
+          "client_id": "1083728603371-mg8i65987khuh31pd907qglravdrdiba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cz.pyramidak.kalendar",
+            "certificate_hash": "c5336fd86a4009181e290f01c9fc76874860b876"
+          }
+        },
+        {
+          "client_id": "1083728603371-vadh2fclavbl09ha8d4bd9e5417hdg93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cz.pyramidak.kalendar",
+            "certificate_hash": "5c035650b2932ccedb00a7c23a1ddb82038349b5"
+          }
+        },
+        {
+          "client_id": "1083728603371-3mno3vvd3n8oe4v8j5h8g7t6seb3sgcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5iLolhSDVz0OidNlnu7lUdOcaEyqOQYE"
+        },
+        {
+          "current_key": "AIzaSyCA669r1qcAL6R6NM4720XhovjGFlwP1Es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083728603371-3mno3vvd3n8oe4v8j5h8g7t6seb3sgcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083728603371:android:b8a2bbbe140c7002c2f6ae",
+        "android_client_info": {
+          "package_name": "cz.pyramidak.kalendar.trial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083728603371-tkrimvis25loa0cdirpc4d29kbhfnm94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cz.pyramidak.kalendar.trial",
+            "certificate_hash": "08a6cb432202e86e8fe48c5eee9387a319eedafe"
+          }
+        },
+        {
+          "client_id": "1083728603371-3mno3vvd3n8oe4v8j5h8g7t6seb3sgcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5iLolhSDVz0OidNlnu7lUdOcaEyqOQYE"
+        },
+        {
+          "current_key": "AIzaSyCA669r1qcAL6R6NM4720XhovjGFlwP1Es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083728603371-3mno3vvd3n8oe4v8j5h8g7t6seb3sgcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

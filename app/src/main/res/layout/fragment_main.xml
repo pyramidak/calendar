@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="8"
+        tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layoutHeader"
+            android:layout_weight="0.30"
+            >
+
+        <TextView
+                app:layout_constraintWidth_percent="0.15"
+                android:text="@string/day_weekday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/tvZahlaviDen"
+                android:background="@color/Zahlavi"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvZahlaviNarozeniny"
+                android:textStyle="bold"/>
+
+        <TextView
+                app:layout_constraintWidth_percent="0.3"
+                android:text="@string/birthday_nameday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/tvZahlaviNarozeniny"
+                android:background="@color/Zahlavi"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvZahlaviDen"
+                app:layout_constraintEnd_toStartOf="@+id/tvZahlaviUpominky"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"/>
+
+        <TextView
+                app:layout_constraintWidth_percent="0.5"
+                android:text="@string/note_holiday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/tvZahlaviUpominky"
+                android:background="@color/Zahlavi"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvZahlaviNarozeniny"
+                android:textStyle="bold"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout1"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvUpominky1"
+                app:layout_constraintStart_toEndOf="@+id/tvNarozeniny1"
+                app:layout_constraintBottom_toTopOf="@+id/tvSvatky1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Den.Upominky"/>
+
+        <TextView
+                android:id="@+id/tvSvatky1"
+                app:layout_constraintStart_toStartOf="@+id/tvUpominky1"
+                app:layout_constraintEnd_toEndOf="@+id/tvUpominky1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Svatky"
+                />
+
+        <TextView
+                android:id="@+id/tvJmeniny1"
+                app:layout_constraintStart_toStartOf="@+id/tvNarozeniny1"
+                app:layout_constraintEnd_toEndOf="@+id/tvNarozeniny1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Jmeniny"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tvNarozeniny1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDen1"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpominky1"
+                app:layout_constraintBottom_toTopOf="@+id/tvJmeniny1"
+                app:layout_constraintWidth_percent="0.3"
+                style="@style/Den.Narozeniny"/>
+
+        <TextView
+                android:id="@+id/tvDen1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.15"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne1"
+                app:layout_constraintEnd_toStartOf="@+id/tvNarozeniny1"
+                style="@style/Den.Dencislo">
+        </TextView>
+
+        <TextView
+                android:id="@+id/tvDenTydne1"
+                app:layout_constraintStart_toStartOf="@+id/tvDen1"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Dentydne" />
+
+        <ImageView
+                android:id="@+id/ivClose1"
+                android:src="@drawable/ic_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen1"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne1"
+                android:contentDescription="@string/icon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout2"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvUpominky2"
+                app:layout_constraintStart_toEndOf="@+id/tvNarozeniny2"
+                app:layout_constraintBottom_toTopOf="@+id/tvSvatky2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Den.Upominky"/>
+
+        <TextView
+                android:id="@+id/tvSvatky2"
+                app:layout_constraintStart_toStartOf="@+id/tvUpominky2"
+                app:layout_constraintEnd_toEndOf="@+id/tvUpominky2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Svatky"/>
+
+        <TextView
+                android:id="@+id/tvJmeniny2"
+                app:layout_constraintStart_toStartOf="@+id/tvNarozeniny2"
+                app:layout_constraintEnd_toEndOf="@+id/tvNarozeniny2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Jmeniny"/>
+
+        <TextView
+                android:id="@+id/tvNarozeniny2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDen2"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpominky2"
+                app:layout_constraintBottom_toTopOf="@+id/tvJmeniny2"
+                app:layout_constraintWidth_percent="0.3"
+                style="@style/Den.Narozeniny"/>
+
+        <TextView
+                android:id="@+id/tvDen2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.15"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne2"
+                style="@style/Den.Dencislo"
+                app:layout_constraintEnd_toStartOf="@+id/tvNarozeniny2"
+                />
+
+        <TextView
+                android:id="@+id/tvDenTydne2"
+                app:layout_constraintStart_toStartOf="@+id/tvDen2"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Dentydne" />
+
+        <ImageView
+                android:id="@+id/ivClose2"
+                android:src="@drawable/ic_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen2"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne2"
+                android:contentDescription="@string/icon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout3"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvUpominky3"
+                app:layout_constraintStart_toEndOf="@+id/tvNarozeniny3"
+                app:layout_constraintBottom_toTopOf="@+id/tvSvatky3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Den.Upominky"/>
+
+        <TextView
+                android:id="@+id/tvSvatky3"
+                app:layout_constraintStart_toStartOf="@+id/tvUpominky3"
+                app:layout_constraintEnd_toEndOf="@+id/tvUpominky3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Svatky"/>
+
+        <TextView
+                android:id="@+id/tvJmeniny3"
+                app:layout_constraintStart_toStartOf="@+id/tvNarozeniny3"
+                app:layout_constraintEnd_toEndOf="@+id/tvNarozeniny3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Jmeniny"/>
+
+        <TextView
+                android:id="@+id/tvNarozeniny3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDen3"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpominky3"
+                app:layout_constraintBottom_toTopOf="@+id/tvJmeniny3"
+                app:layout_constraintWidth_percent="0.3"
+                style="@style/Den.Narozeniny"/>
+
+        <TextView
+                android:id="@+id/tvDen3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.15"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne3"
+                style="@style/Den.Dencislo"
+                app:layout_constraintEnd_toStartOf="@+id/tvNarozeniny3"
+                />
+
+        <TextView
+                android:id="@+id/tvDenTydne3"
+                app:layout_constraintStart_toStartOf="@+id/tvDen3"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Dentydne" />
+
+        <ImageView
+                android:id="@+id/ivClose3"
+                android:src="@drawable/ic_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen3"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne3"
+                android:contentDescription="@string/icon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout4"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvUpominky4"
+                app:layout_constraintStart_toEndOf="@+id/tvNarozeniny4"
+                app:layout_constraintBottom_toTopOf="@+id/tvSvatky4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Den.Upominky"/>
+
+        <TextView
+                android:id="@+id/tvSvatky4"
+                app:layout_constraintStart_toStartOf="@+id/tvUpominky4"
+                app:layout_constraintEnd_toEndOf="@+id/tvUpominky4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Svatky"/>
+
+        <TextView
+                android:id="@+id/tvJmeniny4"
+                app:layout_constraintStart_toStartOf="@+id/tvNarozeniny4"
+                app:layout_constraintEnd_toEndOf="@+id/tvNarozeniny4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Jmeniny"/>
+
+        <TextView
+                android:id="@+id/tvNarozeniny4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDen4"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpominky4"
+                app:layout_constraintBottom_toTopOf="@+id/tvJmeniny4"
+                app:layout_constraintWidth_percent="0.3"
+                style="@style/Den.Narozeniny"/>
+
+        <TextView
+                android:id="@+id/tvDen4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.15"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne4"
+                style="@style/Den.Dencislo"
+                app:layout_constraintEnd_toStartOf="@+id/tvNarozeniny4"
+                />
+
+        <TextView
+                android:id="@+id/tvDenTydne4"
+                app:layout_constraintStart_toStartOf="@+id/tvDen4"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Dentydne" />
+
+        <ImageView
+                android:id="@+id/ivClose4"
+                android:src="@drawable/ic_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen4"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne4"
+                android:contentDescription="@string/icon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout5"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvUpominky5"
+                app:layout_constraintStart_toEndOf="@+id/tvNarozeniny5"
+                app:layout_constraintBottom_toTopOf="@+id/tvSvatky5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Den.Upominky"/>
+
+        <TextView
+                android:id="@+id/tvSvatky5"
+                app:layout_constraintStart_toStartOf="@+id/tvUpominky5"
+                app:layout_constraintEnd_toEndOf="@+id/tvUpominky5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Svatky"/>
+
+        <TextView
+                android:id="@+id/tvJmeniny5"
+                app:layout_constraintStart_toStartOf="@+id/tvNarozeniny5"
+                app:layout_constraintEnd_toEndOf="@+id/tvNarozeniny5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Jmeniny"/>
+
+        <TextView
+                android:id="@+id/tvNarozeniny5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDen5"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpominky5"
+                app:layout_constraintBottom_toTopOf="@+id/tvJmeniny5"
+                app:layout_constraintWidth_percent="0.3"
+                style="@style/Den.Narozeniny"/>
+
+        <TextView
+                android:id="@+id/tvDen5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.15"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne5"
+                style="@style/Den.Dencislo"
+                app:layout_constraintEnd_toStartOf="@+id/tvNarozeniny5"
+                />
+
+        <TextView
+                android:id="@+id/tvDenTydne5"
+                app:layout_constraintStart_toStartOf="@+id/tvDen5"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Dentydne" />
+
+        <ImageView
+                android:id="@+id/ivClose5"
+                android:src="@drawable/ic_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen5"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne5"
+                android:contentDescription="@string/icon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout6"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvUpominky6"
+                app:layout_constraintStart_toEndOf="@+id/tvNarozeniny6"
+                app:layout_constraintBottom_toTopOf="@+id/tvSvatky6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Den.Upominky"/>
+
+        <TextView
+                android:id="@+id/tvSvatky6"
+                app:layout_constraintStart_toStartOf="@+id/tvUpominky6"
+                app:layout_constraintEnd_toEndOf="@+id/tvUpominky6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Svatky"/>
+
+        <TextView
+                android:id="@+id/tvJmeniny6"
+                app:layout_constraintStart_toStartOf="@+id/tvNarozeniny6"
+                app:layout_constraintEnd_toEndOf="@+id/tvNarozeniny6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Jmeniny"/>
+
+        <TextView
+                android:id="@+id/tvNarozeniny6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDen6"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpominky6"
+                app:layout_constraintBottom_toTopOf="@+id/tvJmeniny6"
+                app:layout_constraintWidth_percent="0.3"
+                style="@style/Den.Narozeniny"/>
+
+        <TextView
+                android:id="@+id/tvDen6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.15"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne6"
+                style="@style/Den.Dencislo"
+                app:layout_constraintEnd_toStartOf="@+id/tvNarozeniny6"
+                />
+
+        <TextView
+                android:id="@+id/tvDenTydne6"
+                app:layout_constraintStart_toStartOf="@+id/tvDen6"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Dentydne" />
+
+        <ImageView
+                android:id="@+id/ivClose6"
+                android:src="@drawable/ic_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen6"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne6"
+                android:contentDescription="@string/icon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout7"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvUpominky7"
+                app:layout_constraintStart_toEndOf="@+id/tvNarozeniny7"
+                app:layout_constraintBottom_toTopOf="@+id/tvSvatky7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/Den.Upominky"/>
+
+        <TextView
+                android:id="@+id/tvSvatky7"
+                app:layout_constraintStart_toStartOf="@+id/tvUpominky7"
+                app:layout_constraintEnd_toEndOf="@+id/tvUpominky7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Svatky"/>
+
+        <TextView
+                android:id="@+id/tvJmeniny7"
+                app:layout_constraintStart_toStartOf="@+id/tvNarozeniny7"
+                app:layout_constraintEnd_toEndOf="@+id/tvNarozeniny7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Jmeniny"/>
+
+        <TextView
+                android:id="@+id/tvNarozeniny7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDen7"
+                app:layout_constraintEnd_toStartOf="@+id/tvUpominky7"
+                app:layout_constraintBottom_toTopOf="@+id/tvJmeniny7"
+                app:layout_constraintWidth_percent="0.3"
+                style="@style/Den.Narozeniny"/>
+
+        <TextView
+                android:id="@+id/tvDen7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.15"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne7"
+                style="@style/Den.Dencislo"
+                app:layout_constraintEnd_toStartOf="@+id/tvNarozeniny7"
+                />
+
+        <TextView
+                android:id="@+id/tvDenTydne7"
+                app:layout_constraintStart_toStartOf="@+id/tvDen7"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Den.Dentydne" />
+
+        <ImageView
+                android:id="@+id/ivClose7"
+                android:src="@drawable/ic_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDen7"
+                app:layout_constraintBottom_toTopOf="@+id/tvDenTydne7"
+                android:contentDescription="@string/icon"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layoutFooter"
+            android:layout_weight="0.7">
+
+        <Button
+                android:text="@string/year"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/btnRok"
+                android:backgroundTint="@color/ZahlaviDatum"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.17"
+                app:layout_constraintEnd_toStartOf="@+id/btnMesic"
+                />
+
+        <Button
+                android:text="@string/month"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/btnMesic"
+                android:backgroundTint="@color/ZahlaviDatum"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.31"
+                app:layout_constraintStart_toEndOf="@+id/btnRok"
+                app:layout_constraintEnd_toStartOf="@+id/btnTyden"
+                />
+
+        <Button
+                app:layout_constraintWidth_percent="0.34"
+                android:text="@string/week"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/btnTyden"
+                android:backgroundTint="@color/ZahlaviDatum"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintEnd_toStartOf="@+id/btnDnes"
+                app:layout_constraintStart_toEndOf="@+id/btnMesic"
+                android:lines="1"/>
+
+        <Button
+                app:layout_constraintWidth_percent="0.18"
+                android:text="@string/today"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/btnDnes"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="@color/ZahlaviDatum"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintStart_toEndOf="@+id/btnTyden"
+                android:lines="1"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

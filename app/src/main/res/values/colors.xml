@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#51DC84</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#D6D6D6</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="button_active">#4CAF70</color>
+
+
+    <color name="ZahlaviDatum">#FFF5767C</color>
+    <color name="Zahlavi">#FFA285</color>
+    <color name="Den">#FF439C52</color>
+    <color name="DenJmeno">#FFB7D882</color>
+    <color name="Jmeniny">#FFDAAC</color>
+    <color name="Narozeniny">#FFFAB461</color>
+    <color name="Poznamky">#FF80C6D8</color>
+    <color name="Svatky">#FFB3E7FB</color>
+    <color name="Pozadi">#FFF3F3F3</color>
+
+</resources>

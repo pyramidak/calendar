@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/ChooserFragment"
+    android:id="@+id/nav_firebase_options">
+
+    <fragment
+        android:id="@+id/ChooserFragment"
+        android:name="cz.pyramidak.kalendar.firebase.auth.ChooserFragment"
+        tools:layout="@layout/fragment_chooser">
+
+        <action
+            android:id="@+id/action_firebaseui"
+            app:destination="@id/FirebaseUIFragment" />
+
+        <action
+            android:id="@+id/action_google"
+            app:destination="@id/GoogleSignInFragment" />
+
+        <action
+            android:id="@+id/action_emailpassword"
+            app:destination="@id/EmailPasswordFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirebaseUIFragment"
+        android:name="cz.pyramidak.kalendar.firebase.auth.FirebaseUIFragment"
+        tools:layout="@layout/fragment_firebase_ui"/>
+
+    <fragment
+        android:id="@+id/GoogleSignInFragment"
+        android:name="cz.pyramidak.kalendar.firebase.auth.GoogleSignInFragment"
+        tools:layout="@layout/fragment_google"/>
+
+    <fragment
+            android:id="@+id/EmailPasswordFragment"
+            android:name="cz.pyramidak.kalendar.firebase.auth.EmailPasswordFragment"
+            tools:layout="@layout/fragment_emailpassword">
+
+    </fragment>
+
+
+</navigation>

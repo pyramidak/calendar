@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <TextView
+            android:text="@string/dead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUmrti"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etDayD"
+            android:layout_marginBottom="10dp"/>
+
+    <EditText
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etMonthD"
+            android:maxLength="2"
+            android:hint="@string/month_hint"
+            app:layout_constraintStart_toEndOf="@+id/tvDot1"
+            android:textAlignment="center"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@+id/etMonth"/>
+
+    <TextView
+            android:text="@string/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDot"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/etMonth"
+            android:layout_marginTop="52dp"/>
+
+    <TextView
+            android:text="@string/age"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvNebo2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/etYear"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/etYearD"
+            android:layout_marginBottom="10dp"/>
+
+    <TextView
+            android:text="@string/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDot3"
+            app:layout_constraintStart_toEndOf="@+id/etDay"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:textSize="30sp"
+            android:layout_marginTop="52dp"/>
+
+    <EditText
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etDayD"
+            android:maxLength="2"
+            android:hint="@string/day_hint"
+            android:textAlignment="center"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@+id/etDay"
+            app:layout_constraintEnd_toStartOf="@+id/tvDot3"/>
+
+    <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etYearsD"
+            android:maxLength="2"
+            android:hint="@string/years"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/tvNebo"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@+id/etYears"/>
+
+    <EditText
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etYearD"
+            android:maxLength="4"
+            android:hint="@string/year_hint"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/tvDot2"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@+id/etYear"/>
+
+    <EditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etYears"
+            android:maxLength="2"
+            android:hint="@string/years"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/tvNebo"
+            android:importantForAutofill="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"/>
+
+    <TextView
+            android:text="@string/age"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvNebo"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/etYear"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/etYear"
+            android:layout_marginBottom="10dp"/>
+
+    <EditText
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etYear"
+            android:maxLength="4"
+            android:hint="@string/year_hint"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/tvDot2"
+            android:importantForAutofill="no"/>
+
+    <TextView
+            android:text="@string/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDot2"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/etMonth"/>
+
+    <EditText
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etMonth"
+            android:maxLength="2"
+            android:hint="@string/month_hint"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            app:layout_constraintStart_toEndOf="@+id/tvDot1"
+            android:textAlignment="center"
+            android:importantForAutofill="no"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/etName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:hint="@string/person_hint"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/etPerNum"/>
+
+    <EditText
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etDay"
+            android:maxLength="2"
+            android:hint="@string/day_hint"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:textAlignment="center"
+            android:importantForAutofill="no"
+            app:layout_constraintEnd_toStartOf="@+id/tvDot1"/>
+
+    <TextView
+            android:text="@string/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDot1"
+            app:layout_constraintStart_toEndOf="@+id/etDay"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:textSize="30sp"/>
+
+    <TextView
+            android:text="@string/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNarozeni"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etDay"/>
+
+    <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etPerNum"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLength="11"
+            android:textAlignment="center"
+            android:hint="@string/rodne_hint"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAutofill="no"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:id="@+id/tvLine"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+<!--    <DatePicker-->
+<!--            android:id="@+id/datePicker"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:datePickerMode="spinner"-->
+<!--            android:calendarViewShown="false"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/etDayD"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:visibility="gone"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
